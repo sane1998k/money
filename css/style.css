@@ -162,20 +162,25 @@ body {
   padding-top: 100px;
   display: flex;
   justify-content: space-around;
+  position: relative;
 }
 .present__row .present__body p:first-child {
+  position: absolute;
+  top: 0;
   font-size: 20px;
   text-transform: uppercase;
   font-family: "Roboto-Bold";
   margin-bottom: 10px;
 }
 .present__row .present__body p:nth-child(2) {
+  position: absolute;
+  top: 40px;
   font-size: 20px;
   font-family: "Roboto-Thin";
   margin-bottom: 10px;
 }
 .present__row .present__img {
-  flex: 0 1 600px;
+  flex: 0 1 500px;
   display: flex;
   position: relative;
 }
@@ -186,4 +191,19 @@ body {
   position: absolute;
   top: 20px;
   left: 100px;
+}
+
+.swiper-container {
+  width: 800px;
+  height: 600px;
+}
+
+.img-slide {
+  text-align: center;
+}
+
+.swiper-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

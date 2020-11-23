@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<script src="js/swiper-bundle.min.js"></script>
 	<title>Document</title>
 </head>
 <body>
@@ -34,20 +36,60 @@
 			<div class="container">
 				<div class="present__about">
 					<div class="present__row">
-						<div class="present__body">
-							<p>Название работы</p>
-							<p>О том, о сём</p>
-							<a href="#" class="present__button button">Подробнее</a>
-						</div>
-
-						<div class="present__img">
-							<img src="img/iphone.png" alt="">
-							<img src="img/iphone.png" alt="">
+						<div class="swiper-container">
+						    <!-- Additional required wrapper -->
+						    <div class="swiper-wrapper">
+						        <!-- Slides -->
+						        <div class="swiper-slide">
+						        	<div class="swiper-row">
+						        		<div class="present__body">
+						        			<p>НАЗВАНИЕ РАБОТЫ 1</p>
+						        			<p>О том, о сём</p>
+						        			<a href="#" class="button">Подробнее</a>
+						        		</div>
+						        		<div class="present__img">
+						        		<img src="img/iphone.png" alt="">
+						        		<img src="img/iphone.png" alt="">
+						        		</div>
+						        </div>
+						        </div>
+						        <div class="swiper-slide">
+						        	<div class="swiper-row">
+						        		<div class="present__body">
+						        			<p>НАЗВАНИЕ РАБОТЫ 2</p>
+						        			<p>О том, о сём</p>
+						        			<a href="#" class="button">Подробнее</a>
+						        		</div>
+						        		<div class="present__img">
+						        		<img src="img/iphone.png" alt="">
+						        		<img src="img/iphone.png" alt="">
+						        		</div>
+						        </div>
+						        </div>
+						        <div class="swiper-slide">
+						        	<div class="swiper-row">
+						        		<div class="present__body">
+						        			<p>НАЗВАНИЕ РАБОТЫ 3</p>
+						        			<p>О том, о сём</p>
+						        			<a href="#" class="button">Подробнее</a>
+						        		</div>
+						        		<div class="present__img">
+						        		<img src="img/iphone.png" alt="">
+						        		<img src="img/iphone.png" alt="">
+						        		</div>
+						        </div>
+						        </div>
+						        ...
+						    </div>
+						    <!-- If we need pagination -->
+						    <div class="swiper-pagination"></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<script src="js/main.js"></script>
 </body>
 </html>
