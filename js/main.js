@@ -1,6 +1,6 @@
 new Swiper('.swiper-container', {
   loop: false,
-    pagination: {
+  pagination: {
     el: '.swiper-pagination',
     clickable: true,
     dynamicBullets: true,
@@ -18,3 +18,12 @@ new Swiper('.swiper-container', {
     crossFade: true
   }
 })
+
+
+$(document).ready(function () {
+  $(".header__bottom").click(function () {
+    $('html, body').animate({
+      scrollTop: $(".content").offset().top
+    }, 1500);
+  });
+});
